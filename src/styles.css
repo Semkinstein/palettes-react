@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5rem;
+    
+}
+
+
+.header{
+    height: 4rem;
+    background-color: brown;
+}
+
+.footer{
+    height: 6rem;
+    background-color: darkolivegreen;
+}
+
+
+.generator_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1020px;
+    padding: 2rem 10px;
+    margin: auto;
+}
+
+
+
+.inputs > form{
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    width: 100%;
+    max-width: 17rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.inputs > form >*{
+    width: 17rem;
+}
+
+input[type=submit]{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    height: 4rem;
+    background-color: green;
+    border: none;
+    transition: all 0.1s ease-in-out;
+}
+
+input[type=submit]:active{
+    transform: scale(0.95, 0.95);
+}
+
+.palettes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.palette{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.palette-color{
+    flex-grow: 1;
+    flex-shrink: 1.5;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.palette-color:hover{
+    flex-grow: 1.5;
+    flex-shrink: 1;
+    font-size: 1rem;
+}
+
+.color{
+    height: 5rem;
+    width: 100%;
+    background-color: orange;
+}
+
+.primary-color{
+    height: 17rem;
+    border: none;
+    outline: none;
+}
+
+.primary-color::after{
+    opacity: 0;
+}
+
+@media (min-width: 768px){
+    .generator_contents{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .inputs{
+        max-width: 300px;
+        margin: 0 1rem 1rem;
+    }
+
+    .palettes{
+        flex-direction: row;
+    }
+
+    
+}
+
+@media (min-width: 1024px){
+    .palette{
+        max-width: 300px;
+    }
+}
