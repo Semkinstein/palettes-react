@@ -13,7 +13,7 @@ export default class ColorComponent extends Component {
             backgroundColor: this.state.mainColor
         }
         return (
-            <div className="palette-color color" style={styles}> {this.state.mainColor} </div>
+            <div className="palette-color" style={styles}> {this.state.mainColor} </div>
         )
     }
 }
