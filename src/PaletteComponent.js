@@ -26,8 +26,8 @@ export default class PaletteComponent extends Component {
         return (
             <div className="palette">
                 { 
-                  this.state.palette.map((value) => {
-                  return <ColorComponent key={value} mainColor={value}/>
+                  this.state.palette.map((value, index) => {
+                  return <ColorComponent key={value + index} mainColor={value}/>
                   }) 
                 }
             </div>
